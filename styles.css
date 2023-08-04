@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lugrasimo&display=swap");
+
+body {
+  font-family: "Lugrasimo", cursive;
+  background: linear-gradient(
+    110.5deg,
+    rgba(248, 196, 249, 0.66) 22.8%,
+    rgba(253, 122, 4, 0.15) 64.6%
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 48px;
+  color: #ff347f;
+}
+
+.play-container {
+  display: flex;
+}
+.play-container .human-section,
+.play-container .computer-section {
+  border: 2px solid #f48db4;
+  border-radius: 30px;
+  width: 50%;
+  height: 40vh;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 0 0 0;
+  margin: 1rem;
+  background: #f48db569;
+}
+.play-container .human-section button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30%;
+  background-color: transparent;
+}
+.play-container .human-section button:hover {
+  transform: translateY(2px);
+}
+.play-container .human-section button:active {
+  transform: translateY(4px);
+}
+.play-container .human-section button img,
+.play-container .computer-section button img {
+  width: 150px;
+  border-radius: 30%;
+}
+.play-container .computer-section button {
+  border: none;
+  border-radius: 30%;
+  background-color: transparent;
+}
+#result {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 38px;
+  margin: 30px;
+}
